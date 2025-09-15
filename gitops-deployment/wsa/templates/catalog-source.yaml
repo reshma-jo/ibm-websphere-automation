@@ -6,14 +6,9 @@ metadata:
   name: {{.Values.catalog.name}}
   namespace: openshift-marketplace
   annotations:
-    olm.catalogImageTemplate: "icr.io/cpopen/ibm-operator-catalog:v{kube_major_version}.{kube_minor_version}"
     argocd.argoproj.io/sync-wave: "10"  
 spec:
   displayName: {{.Values.catalog.displayName}}
   sourceType: grpc
   image: {{.Values.catalog.image}}
-  publisher: IBM
-  updateStrategy:
-    registryPoll:
-      interval: 45m
 {{- end}}   
