@@ -4,11 +4,11 @@ gitops:
 catalog:
   name: websphere-automation-catalog
   displayName: IBM WebSphere Automation Catalog
-  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:1.9.0-rc.2
+  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:1.10.0-rc.1
 
 subscription:
   wsaOperatorNamespace: ''
-  channel: v1.9
+  channel: v1.10
   installPlanApproval: Automatic
   wsaInstanceNamespace: ''
 
