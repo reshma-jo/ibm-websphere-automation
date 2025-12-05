@@ -4,11 +4,11 @@ gitops:
 catalog:
   name: websphere-automation-catalog
   displayName: IBM WebSphere Automation Catalog
-  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:1.10.0-rc.1
+  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:1.11.0-rc.1
 
 subscription:
   wsaOperatorNamespace: websphere-automation
-  channel: v1.10
+  channel: v1.11
   installPlanApproval: Automatic
   wsaInstanceNamespace: websphere-automation
 
@@ -18,7 +18,7 @@ commonServicesNamespace: websphere-automation
 
 licensingNamespace: ibm-licensing
 
-certManagerNamespace: ibm-cert-manager
+certManagerNamespace: cert-manager-operator
 
 wsaHealth:
   spec:
