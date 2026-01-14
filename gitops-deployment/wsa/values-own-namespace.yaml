@@ -18,7 +18,7 @@ commonServicesNamespace: websphere-automation
 
 licensingNamespace: ibm-licensing
 
-certManagerNamespace: cert-manager-operator
+certManagerNamespace: ibm-cert-manager
 
 wsaHealth:
   spec:
