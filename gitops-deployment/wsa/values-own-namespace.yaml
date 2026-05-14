@@ -18,12 +18,12 @@ commonServicesNamespace: websphere-automation
 
 licensingNamespace: ibm-licensing
 
-certManagerNamespace: ibm-cert-manager
+certManagerNamespace: cert-manager
 
 wsaHealth:
   spec:
     license:
-      accept: true
+      accept: ''
 
 wsaSecure:
   spec:
