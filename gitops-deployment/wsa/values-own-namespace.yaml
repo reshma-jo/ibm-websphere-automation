@@ -18,17 +18,19 @@ commonServicesNamespace: websphere-automation
 
 licensingNamespace: ibm-licensing
 
-certManagerNamespace: ibm-cert-manager
+certManagerNamespace: cert-manager
 
 wsaHealth:
   spec:
     license:
       accept: true
+    replicas: 1
 
 wsaSecure:
   spec:
     license:
-      accept: true      
+      accept: true
+    replicas: 1
 
 wsa:
   spec:
@@ -36,3 +38,30 @@ wsa:
       registryNamespace: websphere-automation
     license:
       accept: true
+    replicas: 1
+    dataStore:
+      resources:
+        limits:
+          cpu: '2'
+          memory: 2Gi
+        requests:
+          cpu: '1'
+          ephemeral-storage: 100Mi
+          memory: 1Gi
+    events:
+      kafka:
+        resources:
+          limits:
+            cpu: '2'
+            memory: 5Gi
+          requests:
+            cpu: '2'
+            memory: 5Gi
+      zookeeper:
+        resources:
+          limits:
+            cpu: '1'
+            memory: 2Gi
+          requests:
+            cpu: '1'
+            memory: 2Gi
