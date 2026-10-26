@@ -4,7 +4,21 @@ gitops:
 catalog:
   name: websphere-automation-catalog
   displayName: IBM WebSphere Automation Catalog
-  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:1.13.0-rc.1
+  image: icr.io/websphere-automation/cp/websphere-automation-operator-catalog:stable
+
+cpfsCatalog:
+  enabled: true
+  name: ibm-cpfs-catalog
+  displayName: ibm-cpfs-catalog
+  image: icr.io/cpopen/ibm-common-service-catalog:4.19.2
+  syncWave: "0"
+
+pgCatalog:
+  enabled: true
+  name: ibm-pg-operator-catalog
+  displayName: ibm-pg-operator-catalog
+  image: icr.io/cpopen/ibm-pg-operator-catalog:v28.3.2
+  syncWave: "0"
 
 subscription:
   wsaOperatorNamespace: websphere-automation
